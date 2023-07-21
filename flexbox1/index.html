@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Centered Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="build/styles.css">
+</head>
+<body>
+   
+    <header class="top">
+        <h1><a href="../flexbox2/index.html" class="header-link">FlexBox Proyect</a></h1>
+    </header>
+    <div class="wrapper"></div>
+   
+
+    <div class="slider">
+        <img src="https://picsum.photos/800/600">
+    </div>
+
+    <nav class="slider-nav">
+        <ul>
+            <li class="arrow">
+                <a href="index.html"><span>←</span></a>
+            </li>
+
+            <li>
+                <a href="#"><span>Add a CLI to node Apps with Vantage</span></a>
+            </li>
+
+            
+            <li>
+                <a href="#"><span>NewSprint, Spectacle</span></a>
+            </li>
+
+            
+            <li>
+                <a href="#"><span>Small Modules: Tales from a Serial Module Author</span></a>
+            </li>
+
+            
+            <li>
+                <a href="#"><span>The End</span></a>
+            </li>
+
+            <li class="arrow">
+                <a href="index.html"><span>→</span></a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+ 
+
+    <footer>
+        <p>&copy; Aco Alonso</p>
+    </footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+    $(function() {
+        $('.toggleNav').on('click',function() {
+            $('.flex-nav ul').toggleClass('open');
+        });
+    });
+
+</script>
+
+</body>
+</html>

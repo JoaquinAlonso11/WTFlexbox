@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Price Grid</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="build/styles.css">
+</head>
+<body>
+
+    <header class="top">
+        <h1><a href="../flexbox2/index.html">FlexBox Proyect</a></h1>
+    </header>
+
+    <div class="pricing-grid">
+        
+        <div class="plan plan1">
+            <h2>Gato</h2>
+            <p class="description">Corriente, aunque aun catalogado por muchos como el peor animal domestico</p>
+            <ul class="features">
+                <li>Rayan los muebles</li>
+                <li>Se pierden por dias</li>
+                <li>Muy independientes</li>
+            </ul>
+            <p class="price">Gratis</p>
+            <a href="#" class="cta">Esto es real?</a>
+        </div>
+
+        <div class="plan plan2">
+            <h2>Perro</h2>
+            <p class="description">Amoroso y leal. Los perros son considerados el mejor amigo del hombre y ayudan a aumentar nuestra felicidad</p>
+            <ul class="features">
+                <li>Muy diertidos</li>
+                <li>Todo el mundo los ama</li>
+                <li>Les encanta jugar</li>
+                <li>Son demandantes</li>
+            </ul>
+            <p class="price">75 U$S</p>
+            <a href="#" class="cta">Mejor precio →</a>
+        </div>
+
+        <div class="plan plan3">
+            <h2>Pez</h2>
+            <p class="description">Baratos, lindos y aburridos</p>
+            <ul class="features">
+                <li>Necesitan mantenimiento</li>
+                <li>Comen cereales</li>
+                <li>Remplazables</li>
+            </ul>
+            <p class="price">3 U$S</p>
+            <a href="#" class="cta">Dame cositas</a>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; Aco Alonso</p>
+    </footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+    $(function() {
+        $('.toggleNav').on('click',function() {
+            $('.flex-nav ul').toggleClass('open');
+        });
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 20px;
+    background-image: linear-gradient(260deg, #33310a 1%, #2069A9 100%);
+}
+
+section, footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+    font-weight: 100;
+}
+
+
+
+a {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition: all 0.7s;
+    
+}
+
+a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+.item.large {
+    font-size: 40px;
+}
+
+.item.small {
+    font-size: 20px;
+}
+
+.item {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.item:hover,
+.item.small:hover,
+.item.large:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+
+
+ /* flex elements */
+
+ .elements {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .item {
+    flex: 1 1 calc(33.33% - 20px);
+    
+ }

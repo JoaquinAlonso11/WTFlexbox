@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="build/styles.css">
+</head>
+<body>
+    <div class="wrapper"></div>
+
+    <header class="top">
+    <h1><a href="index.html">FlexBox Proyect</a></h1>
+</header>
+
+    <nav class="flex-nav">
+        <a href="#" class="toggleNav">Menu</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="../flexbox1/index.html">Galeria</a></li>
+            <li><a href="../flexbox3/index.html">Precios</a></li>
+            <li><a href="../flexbox4/index.html">Cancionero</a></li>
+            <li><a href="../flexbox5/index.html">Vuelos</a></li>
+            <li><a href="../flexbox6-app-layout/index.html">App Layout</a></li>
+            <li class="social">
+                <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>      
+        </li>
+        <li class="social">
+        <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>      
+        </li>
+        <li class="social">
+        <a href="http://github.com" target="_blank"><i class="fa fa-github"></i></a>      
+        </li>
+        <li class="social">
+        <a href="http://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>      
+        </li>
+
+        </ul>
+
+    </nav>
+
+    <section class="hero">
+        <img src="https://picsum.photos/1000/600">
+    </section>
+
+    <section class="details">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos labore a soluta cumque enim quo consequatur dolore inventore. Ipsa vel dignissimos aut harum temporibus consectetur eius reprehenderit nisi animi eos!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eveniet alias repudiandae porro repellat illo magnam, rerum mollitia numquam nemo animi possimus quaerat voluptas. Reiciendis animi culpa suscipit nostrum necessitatibus!</p>
+
+    </section>
+
+    <section class="signup">
+        <form action="" class="signup">
+            <input type="text" placeholder="Tu Nombre">
+            <input type="email" placeholder="Correo Electronico">
+            <input type="submit" value="Enviar Datos!" id="btnSubmit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Aco Alonso</p>
+    </footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+    $(function() {
+        $('.toggleNav').on('click',function() {
+            $('.flex-nav ul').toggleClass('open');
+        });
+    });
+
+</script>
+
+</body>
+</html>

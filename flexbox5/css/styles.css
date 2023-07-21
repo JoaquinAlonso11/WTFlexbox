@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 20px;
+    background-image: linear-gradient(260deg, #33310a 1%, #2069A9 100%);
+}
+
+section, footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+    font-weight: 100;
+}
+
+
+
+a {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition: all 0.7s;
+    
+}
+
+a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+.flex-form > * {
+    border: 0;
+    padding: 10px;
+    background: white;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 0;
+    outline: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.flex-form > *:last-child {
+    border-right: 0;
+}
+
+.submit {
+    background-color: #FF4D53;
+    color: white;
+}
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+  }
+
+.date {
+    font-weight: lighter;
+    font-size: 1.2em;
+    color: #888;
+  }
+
+/*flexbox*/
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+}
+
+.flex-form {
+    display: flex;
+    border: 20px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .cover {
+        
+      margin-top: 20vh;
+      margin-bottom: 20vh;
+    }
+
+    .flex-form {
+        flex-direction: column;
+    }
+  }
